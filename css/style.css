@@ -1,0 +1,98 @@
+/* DAY-1 */
+/* FONT SETUP */
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/GraphikSemibold.ttf);
+}
+
+/* CSS Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* BODY RESET */
+body {
+    background-color: black;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    /* border: red solid 2px; */
+    height: 550px;
+    width: 50%;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+}
+
+.navbar .items {
+    font-size: 135px;
+    font-weight: 600;
+    font-family: myFont;
+    margin: 10px;
+}
+
+.navbar .items a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.items #onHover {
+    display: none;
+}
+
+.items:hover #main {
+    display: none;
+}
+
+.items:hover #onHover {
+    display: inline;
+}
+
+
+
+/* TEXT ANIMATIONS */
+.lineUp {
+    animation: 4s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+/* ON HOVER */
+.navbar .items .on-hover-40 {
+    display: block;
+    margin: 0px;
+}
+
+.navbar .items a:hover {
+    margin-left: 40px;
+    transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+
+
+/* DAY-2 */

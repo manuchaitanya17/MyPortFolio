@@ -1,0 +1,133 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/GraphikSemibold.ttf);
+}
+
+@font-face {
+    font-family: myPara;
+    src: url(../fonts/GraphikLight.ttf);
+}
+
+@font-face {
+    font-family: myLink;
+    src: url(../fonts/GraphikRegular.ttf);
+}
+@font-face {
+    font-family: myMedium;
+    src: url(../fonts/GraphikMedium.ttf);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: myFont;
+    animation: 4s anim-body ease-out;
+    text-rendering: optimizeLegibility;
+}
+
+    @keyframes anim-body {
+        0% {
+            opacity: 0;
+            transform: translateY(80%);
+        }
+    
+        20% {
+            opacity: 0;
+        }
+    
+        50% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    /* CONTAINER-1 */
+
+    #work-container-1{
+        display: flex;
+        height: 100px;
+        /* border: 2px solid red; */
+        margin: 60px;
+        flex-direction: row-reverse;
+    }
+
+    #item-1{
+        align-self: flex-end;
+    }
+
+
+    #work-container-1 .items .on-hover-40 {
+        display: block;
+        margin: 0px;
+    }
+    
+    #work-container-1 .items a:hover {
+        margin-right: 40px;
+        transition: all 1.0s cubic-bezier(0.2, 0.6, 0.2, 1);
+    }
+
+
+
+
+#item-1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.items #onHover {
+    display: none;
+    color: white;
+}
+
+.items:hover #main {
+    display: none;
+}
+
+.items:hover #onHover {
+    display: inline;
+}
+
+/* CONTAINER-2 */
+#work-container-2{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 250px;
+    /* border: 2px green solid; */
+    height: 1200px;
+    
+}
+#work-container-2 .items{
+    margin: 60px 0px;
+}
+
+#work-container-2 .items:hover{
+    margin-left: 90px;
+    transition: all .7s cubic-bezier(0.2, 0.6, 0.2, 1);
+    cursor: pointer;
+
+}
+#work-container-2 .items a{
+    color: white;
+    text-decoration: none;
+    font-size: 100px;
+    
+}
+#work-container-2 .items p{
+    color: rgb(202, 1, 1);
+    font-size: 18px;
+    font-family: myMedium;
+    margin: 20px 0px;
+    
+}

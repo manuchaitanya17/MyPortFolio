@@ -1,0 +1,161 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/GraphikSemibold.ttf);
+}
+
+@font-face {
+    font-family: myPara;
+    src: url(../fonts/GraphikLight.ttf);
+}
+
+@font-face {
+    font-family: myLink;
+    src: url(../fonts/GraphikRegular.ttf);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: myFont;
+    animation: 4s anim-body ease-out;
+    text-rendering: optimizeLegibility;
+}
+
+    @keyframes anim-body {
+        0% {
+            opacity: 0;
+            transform: translateY(80%);
+        }
+    
+        20% {
+            opacity: 0;
+        }
+    
+        50% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    /* CONTAINER-1 */
+
+    #about-container-1{
+        display: flex;
+        height: 100px;
+        /* border: 2px solid red; */
+        margin: 60px;
+        flex-direction: row-reverse;
+    }
+
+    #item-1{
+        align-self: flex-end;
+    }
+
+
+    #about-container-1 .items .on-hover-40 {
+        display: block;
+        margin: 0px;
+    }
+    
+    #about-container-1 .items a:hover {
+        margin-right: 40px;
+        transition: all 1.0s cubic-bezier(0.2, 0.6, 0.2, 1);
+    }
+
+
+
+
+#item-1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.items #onHover {
+    display: none;
+    color: white;
+}
+
+.items:hover #main {
+    display: none;
+}
+
+.items:hover #onHover {
+    display: inline;
+}
+
+
+
+/* CONTAINER-2 */
+#about-container-2{
+    margin: 40px 200px;
+    /* border: yellow solid 2px; */
+    height: 250px;
+}
+
+#cont-2-item-1{
+    font-size: 90px;
+    line-height: 150%;
+}
+
+/* CONTAINER-3 */
+#about-container-3{
+    border: rgb(255, 0, 0) 2px solid;
+    height: 600px;
+    margin: 80px 100px;
+}
+
+#about-conatiner-4{
+    margin: 40px 200px;
+    margin-right: 400px;
+    /* border: blue 2px solid; */
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+#cont-4-item-1{
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+#cont-4-item-2{
+    font-family: myPara;
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 160%;
+    font-weight: 0;
+    
+}
+
+#cont-4-item-3{
+    font-family: myPara;
+    font-size: 18px;
+    line-height: 170%;
+    font-weight: 0;
+}
+
+
+#cont-4-item-4 {
+    margin-top: 20px;
+}
+#cont-4-item-4 a{
+    font-size: 18px;
+    font-family: myLink;
+    color: red;
+}
+
+#cont-4-item-4 a:hover{
+    margin-left: 40px;
+    transition: all 1.0s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
